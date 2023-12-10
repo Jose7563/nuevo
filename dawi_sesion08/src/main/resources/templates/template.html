@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+	<div th:fragment="head">
+
+	</div>
+
+	<header class="container-fluid bg-dark text-light" th:fragment="header">
+		<h1 style="margin: 0;">Ciberfarma</h1>
+	</header>
+
+	<nav th:fragment="menu" class="navbar navbar-expand-md bg-dark mb-3" data-bs-theme="dark">
+		<div class="container-fluid">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+				aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="menu">
+				<a class="navbar-brand" href="#">CF</a>
+				<ul class="navbar-nav me-auto mb-2 mb-md-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" th:href="@{/proveedores}">Mantenimiento de proveedores</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+
+	<footer class="container-fluid bg-dark text-light mt-3 p-4" th:fragment="footer">
+		&copy;2023 Jhon - Derechos reservados
+	</footer>
+
+</body>
+
+</html>
